@@ -3,37 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects | Dr. Sumon Hossain</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Projects | Dr. Md Sumon Hossain</title>
+  <style>
+    :root {
+      --main: #17537d;
+      --accent: #f3b13a;
+      --bg: #f7fafc;
+      --white: #fff;
+      --soft: #e8eef3;
+      --text: #212b36;
+      --shadow: 0 4px 32px rgba(23, 83, 125, 0.12);
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      color: var(--text);
+    }
+    .nav-bar {
+      margin: 0 auto 22px auto;
+      max-width: 780px;
+      text-align: center;
+    }
+    .nav-bar nav {
+      display: inline-block;
+      background: var(--white);
+      border-radius: 24px;
+      box-shadow: 0 2px 8px rgba(23,83,125,0.07);
+      overflow: hidden;
+    }
+    .nav-bar a {
+      color: var(--main);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.04rem;
+      padding: 10px 22px;
+      display: inline-block;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-bar a.active, .nav-bar a:hover {
+      background: var(--accent);
+      color: var(--white);
+    }
+    .section-container {
+      background: var(--white);
+      max-width: 780px;
+      margin: 0 auto 38px auto;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 44px 38px 40px 38px;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      text-align: center;
+      color: var(--main);
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+    h2 {
+      color: var(--main);
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+      margin-top: 32px;
+    }
+    ul {
+      font-size: 1.11rem;
+      margin-left: 0;
+      padding-left: 18px;
+      list-style: disc inside;
+    }
+    li {
+      margin-bottom: 22px;
+      line-height: 1.7;
+      background: var(--soft);
+      padding: 18px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(23,83,125,0.04);
+      margin-right: 0;
+    }
+    b {
+      color: var(--main);
+      font-size: 1.08em;
+      letter-spacing: 0.2px;
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 1rem;
+      padding: 18px 0 26px 0;
+      background: none;
+    }
+    @media (max-width: 600px) {
+      .section-container { padding: 28px 5vw 20px 5vw; }
+      h1 { font-size: 1.4rem; }
+      ul { padding-left: 0; }
+      li { padding: 12px 10px; }
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <div class="nav-bar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="research.html">Research Interests</a>      
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="section-container">
     <h1>Projects</h1>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research Interests</a>
-    <a href="publications.html">Publications</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <section>
-      <ul>
-        <li>
-          <b>Project Title 1</b><br>          
-               I received the NSU Research Grant for Fiscal year 2025-2026 for the research project-" Advanced Optimization Techniques for Large-Scale Switched Systems and Their Practical Applications" (ongoing) 
-        </li>
-        <li>
-          <b>Upcoming Project Title 2</b><br>
-         Data Driven Control
-        </li>
-        <!-- Add more projects -->
-      </ul>
-    </section>
-  </main>
+    <ul>
+      <li>
+        <b>Advanced Optimization Techniques for Large-Scale Switched Systems and Their Practical Applications</b><br>
+        I received the NSU Research Grant for Fiscal year 2025-2026 for the research project — <i>Advanced Optimization Techniques for Large-Scale Switched Systems and Their Practical Applications</i> (ongoing).
+      </li>
+      <li>
+        <b>Upcoming Project: Data Driven Control</b><br>
+        Exploring advanced data-driven control strategies for complex systems. Project details will be updated soon.
+      </li>
+    </ul>
+  </div>
   <footer>
-    &copy; 2025 Dr. Sumon Hossain &mdash; North South University
+    &copy; 2025 Dr. Md Sumon Hossain &mdash; North South University
   </footer>
 </body>
 </html>
