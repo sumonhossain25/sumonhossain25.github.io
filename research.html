@@ -3,59 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research Interests | Dr. Sumon Hossain</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Research Interests | Dr. Md Sumon Hossain</title>
+  <style>
+    :root {
+      --main: #17537d;
+      --accent: #f3b13a;
+      --bg: #f7fafc;
+      --white: #fff;
+      --soft: #e8eef3;
+      --text: #212b36;
+      --shadow: 0 4px 32px rgba(23, 83, 125, 0.12);
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      color: var(--text);
+    }
+    .nav-bar {
+      margin: 0 auto 22px auto;
+      max-width: 780px;
+      text-align: center;
+    }
+    .nav-bar nav {
+      display: inline-block;
+      background: var(--white);
+      border-radius: 24px;
+      box-shadow: 0 2px 8px rgba(23,83,125,0.07);
+      overflow: hidden;
+    }
+    .nav-bar a {
+      color: var(--main);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.04rem;
+      padding: 10px 22px;
+      display: inline-block;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-bar a.active, .nav-bar a:hover {
+      background: var(--accent);
+      color: var(--white);
+    }
+    .section-container {
+      background: var(--white);
+      max-width: 780px;
+      margin: 0 auto 38px auto;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 44px 38px 40px 38px;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      text-align: center;
+      color: var(--main);
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+    h2 {
+      color: var(--main);
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+      margin-top: 32px;
+    }
+    ul {
+      font-size: 1.14rem;
+      margin-left: 0;
+      padding-left: 18px;
+      list-style: disc inside;
+    }
+    li {
+      margin-bottom: 18px;
+      line-height: 1.6;
+      background: var(--soft);
+      padding: 14px 18px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(23,83,125,0.04);
+    }
+    @media (max-width: 600px) {
+      .section-container { padding: 28px 5vw 20px 5vw; }
+      h1 { font-size: 1.4rem; }
+      ul { padding-left: 0; }
+      li { padding: 12px 10px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="nav-bar">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="research.html">Research Interests</a>
-            <a href="publications.html" class="active">Publications</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-    <div class="section-container">
-        <h1>Publications</h1>
-
-        <h2>Submitted Papers</h2>
-        <ol reversed>
-            <li>Md Sumon Hossain, et al. Efficient machine learning methods for predicting epileptic seizures. <span class="note">(under review)</span></li>
-            <li>Md Sumon Hossain, et al. Physics-informed neural network to predict nonlinear systems. <span class="note">(under review)</span></li>
-            <li>Md Sumon Hossain, et al. Model reduction method of quadratic bilinear system. <span class="note">(under review)</span></li>
-            <li>Md Sumon Hossain, et al. Model reduction method of descriptor bilinear systems. <span class="note">(under review)</span></li>
-            <li>Md Sumon Hossain, et al. Advanced Model Order Reduction for High-Dimensional Aerospace Control Systems. <span class="note">(under review)</span></li>
-            <li>Md Sumon Hossain, et al. Optimal model order reduction technique for the dynamic motor vehicle suspension system. <span class="note">(under review)</span></li>
-            <li>Md Sumon Hossain, et al. Computation of Frequency-Limited Reduced-Order Model for a Piezo Actuator-based Adaptive Spindle Support. <span class="note">(under review)</span></li>
-            <li>Md Sumon Hossain, et al. Efficient model reduction methods for photovoltaic panel in frequency restricted domain. <span class="note">(under review)</span></li>
-        </ol>
-
-        <h2>Journal Articles</h2>
-        <ol reversed>
-            <li>M. Saiduzzaman, M. S. Islam, Md Sumon Hossain, M M. Uddin, M. O. Gani. Balanced truncation model reduction for laser heating model in frequency restricted domain. vol, 9, 2024.</li>
-            <li>Md Sumon Hossain and Stephan Trenn. Model reduction for switched differential-algebraic equations with known switching signal. DAE panel, vol. 3, 2025.</li>
-            <li>Md Sumon Hossain and Stephan Trenn. Midpoint based balanced truncation for switched linear systems with known switching signal. IEEE Transactions on Automatic Control, vol. 69, no. 1, 2023.</li>
-            <li>Md Sumon Hossain and Stephan Trenn. Reduced realization for switched linear systems with known mode sequence. Automatica, vol. 154, no. 111065, 1- 9, 2023.</li>
-            <li>Md Sumon Hossain and Stephan Trenn. Minimality of linear switched systems with known switching signal. Applied Mathematics and Mechanics, pamm.202100067, 2021.</li>
-            <li>Md Sumon Hossain and M. Monir Uddin. Iterative methods for solving large sparse Lyapunov equations and application to model reduction of index-1 differential-algebraic-equations. Numerical Algebra, Control and Optimization, 9(2): 173-186, 2019.</li>
-            <li>Manik Mondal, M. Forhad Uddin, and Md Sumon Hossain. Estimation of inventory for deteriorating items with non-linear demand considering discount and without discount policy. Journal of Naval Architecture and Marine Engineering, 13(2): 151-164, 2016.</li>
-        </ol>
-
-        <h2>Conference Papers</h2>
-        <ol reversed>
-            <li>Md Sumon Hossain and Stephan Trenn. A weak Kalman decomposition approach for reduced realizations of switched linear systems. IFAC-PapersOnLine, 55(20): 157-162, 2022.</li>
-            <li>Md Sumon Hossain and Stephan Trenn. Minimal realization for linear switched systems with a single switch. European Control Conference (ECC), 1168-1173, 2021.</li>
-            <li>Md Sumon Hossain and Stephan Trenn. A time-varying Gramian based model reduction approach for Linear Switched Systems. IFAC-PapersOnLine, 53(2): 5629-5634, 2020.</li>
-            <li>Md Sumon Hossain, M. Forhad Uddin and Manik Mondal. The Effects of Coordination Mechanism on Vendor Buyer System of a Supply Chain. 10th International Conference on Marine Technology (MARTEC), 194, 529-536, 2017.</li>
-            <li>M. Monir Uddin, Md Sumon Hossain, M. Forhad Uddin. Rational Krylov Subspace Method (RKSM) for solving the lyapunov equations of index-1 descriptor systems and application to balancing based model reduction. 9th International Conference on Electrical and Computer Engineering (ICECE), 451-454, 2016. <span class="note">(Received Best Paper Award)</span></li>
-        </ol>
-
-        <h2>Thesis Book</h2>
-        <ol reversed>
-            <li>Mphil.:  Md. Sumon Hossain, "Efficient solution of Lyapunov equation for descriptor system and application to model order reduction."</li>
-            <li>PhD:  Md. Sumon Hossain, "Reduced realizations and model reduction for switched linear systems: a time-varying approach."</li>
-        </ol>
-    </div>
+  <div class="nav-bar">
+    <nav>
+      <a href="index.html">Home</a>      
+      <a href="publications.html">Publications</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html" class="active">Research Interests</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="section-container">
+    <h1>Research Interests</h1>
+    <ul>
+      <li><b>Model Order Reduction of Linear and Nonlinear Systems</b><br>
+        Developing efficient algorithms for reducing complex dynamical systems while preserving essential characteristics for analysis and control.
+      </li>
+      <li><b>Switched Systems</b><br>
+        Studying systems that switch between different modes of operation, with a focus on stability, control, and model reduction.
+      </li>
+      <li><b>Optimization</b><br>
+        Exploring advanced optimization techniques for solving engineering and mathematical problems, including large-scale and real-world applications.
+      </li>
+      <li><b>Machine Learning</b><br>
+        Applying machine learning methods to system identification, prediction, and control, with emphasis on data-driven modeling and hybrid approaches.
+      </li>
+      <li><b>Differential-Algebraic Equations</b><br>
+        Investigating the theory and numerical solution of DAEs, particularly as they relate to control, simulation, and reduction of complex systems.
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
