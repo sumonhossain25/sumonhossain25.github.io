@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Dr. Md Sumon Hossain</title>
+    <style>
+        :root {
+            --main: #17537d;
+            --accent: #f3b13a;
+            --bg: #f7fafc;
+            --white: #fff;
+            --soft: #e8eef3;
+            --text: #212b36;
+            --shadow: 0 4px 32px rgba(23, 83, 125, 0.12);
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            color: var(--text);
+        }
+        .hero {
+            background: linear-gradient(140deg, var(--main) 60%, var(--accent) 100%);
+            color: var(--white);
+            padding: 70px 0 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0; right: 0; bottom: -60px;
+            height: 120px;
+            background: var(--bg);
+            border-radius: 100% 100% 0 0 / 100% 100% 0 0;
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.9rem;
+            margin: 0 0 16px 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .hero .role {
+            font-size: 1.27rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 22px;
+        }
+        .hero p {
+            font-size: 1.18rem;
+            line-height: 1.75;
+            max-width: 510px;
+            margin: 0 auto 14px auto;
+        }
+        .cta-btn {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 13px 36px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            background: var(--accent);
+            color: var(--main);
+            border: none;
+            border-radius: 26px;
+            box-shadow: 0 2px 14px rgba(243,177,58,0.12);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.19s, color 0.19s;
+        }
+        .cta-btn:hover {
+            background: var(--white);
+            color: var(--main);
+            box-shadow: 0 2px 24px rgba(243,177,58,0.19);
+        }
+        .about {
+            background: var(--white);
+            max-width: 780px;
+            margin: -40px auto 38px auto;
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            padding: 44px 38px 40px 38px;
+            position: relative;
+            z-index: 2;
+        }
+        .about h2 {
+            color: var(--main);
+            font-size: 1.55rem;
+            margin: 0 0 18px 0;
+        }
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.75;
+            margin: 0 0 10px 0;
+        }
+        .about ul {
+            margin-top: 10px;
+            margin-left: 24px;
+            font-size: 1.07rem;
+        }
+        .about li {
+            margin-bottom: 6px;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.1rem; }
+            .about { padding: 28px 9vw 20px 9vw; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome! <span style="display:block;">I'm Dr. Md Sumon Hossain</span></h1>
+            <div class="role">Assistant Professor of Mathematics<br>North South University</div>
+            <p>
+                Passionate about sparking curiosity and advancing research in mathematics.<br>
+                Let's explore, learn, and innovate together!
+            </p>
+            <a href="#contact" class="cta-btn">Contact Me</a>
+        </div>
+    </section>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I hold a PhD in Mathematics from Rijksuniversiteit Groningen, specializing in Hybrid Systems, Optimization, and Machine Learning. My research spans Switched Systems and Machine Learning, focusing on innovative solutions to modern mathematical challenges.
+        </p>
+        <p>
+            As an educator, my mission is to inspire and empower the next generation of mathematicians by fostering a dynamic, interactive, and supportive learning environment.
+        </p>
+        <ul>
+            <li>Engaging lectures & hands-on activities</li>
+            <li>Encouraging critical thinking and creativity</li>
+            <li>Active research, collaborations, and publications</li>
+        </ul>
+        <p>
+            I am proud to be part of the North South University community, contributing to excellence in education and research.
+        </p>
+        <p>
+            <strong>Feel free to reach out with questions or collaboration ideas—let's embark on a mathematical adventure together!</strong>
+        </p>
+    </section>
+</body>
+</html>
