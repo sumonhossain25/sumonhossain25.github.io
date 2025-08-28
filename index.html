@@ -5,72 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Md Sumon Hossain - Assistant Professor of Mathematics</title>
     <style>
+        :root {
+            --primary: #17537d;
+            --accent: #f3b13a;
+            --bg: #f6fafd;
+            --text: #222;
+            --header: #155fa0;
+            --white: #fff;
+            --border: #e3e3e3;
+            --shadow: 0 8px 32px rgba(23, 83, 125, 0.10);
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f9f9f9;
-            color: #222;
+            background: var(--bg);
+            color: var(--text);
             margin: 0;
             padding: 0;
         }
+        .nav-bar {
+            background: var(--primary);
+            padding: 0 0 0 22px;
+            box-shadow: 0 2px 12px rgba(23, 83, 125, 0.06);
+        }
+        .nav-bar nav {
+            display: flex;
+            gap: 0;
+        }
+        .nav-bar nav a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 16px 24px;
+            font-size: 1.08rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            border-bottom: 3px solid transparent;
+            transition: background 0.18s, border-bottom 0.18s, color 0.18s;
+        }
+        .nav-bar nav a:hover,
+        .nav-bar nav a.active {
+            background: rgba(243,177,58,0.14);
+            color: var(--accent);
+            border-bottom: 3px solid var(--accent);
+        }
         .container {
-            max-width: 740px;
-            margin: 48px auto;
-            background: #fff;
-            border-radius: 10px;
-            padding: 38px 34px 34px 34px;
-            box-shadow: 0 4px 32px rgba(0,0,0,.10);
+            max-width: 800px;
+            margin: 48px auto 0 auto;
+            background: var(--white);
+            border-radius: 16px;
+            padding: 42px 38px 38px 38px;
+            box-shadow: var(--shadow);
         }
-        h1 {
-            color: #155fa0;
-            margin-bottom: 4px;
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            margin-bottom: 18px;
         }
-        h2 {
-            color: #3d3d3d;
-            margin-top: 24px;
+        .profile-photo {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+            background: var(--soft, #eaeaea);
         }
-        .subtitle {
-            font-size: 1.18rem;
+        .profile-main h1 {
+            color: var(--header);
+            margin: 0 0 6px 0;
+            font-size: 2.3rem;
+            letter-spacing: 0.7px;
+            font-weight: bold;
+        }
+        .profile-main .subtitle {
+            font-size: 1.15rem;
             color: #555;
-            margin-bottom: 32px;
+            margin-bottom: 0;
         }
         section {
-            margin-bottom: 28px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 1.11rem;
+            line-height: 1.7;
         }
         ul {
-            margin-top: 12px;
-            margin-left: 20px;
+            margin-top: 10px;
+            margin-left: 22px;
+            font-size: 1.07rem;
         }
         .contact {
-            margin-top: 34px;
-            padding-top: 15px;
-            border-top: 1px solid #e3e3e3;
+            margin-top: 38px;
+            padding-top: 18px;
+            border-top: 1.5px solid var(--border);
             color: #444;
             font-size: 1.08rem;
         }
         .signature {
-            margin-top: 38px;
+            margin-top: 36px;
             font-style: italic;
-            color: #155fa0;
+            color: var(--header);
+            font-size: 1.04rem;
+        }
+        @media (max-width: 650px) {
+            .container { padding: 20px 5vw 18px 5vw; }
+            .profile-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+            .profile-photo { width: 70px; height: 70px; }
+            .profile-main h1 { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
+    <div class="nav-bar">
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="research.html">Research Interests</a>
+            <a href="publications.html">Publications</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
     <div class="container">
-        <h1>Dr. Md Sumon Hossain</h1>
-        <div class="subtitle">
-            Assistant Professor, Department of Mathematics<br>
-            North South University
+        <div class="profile-header">
+            <img src="profile.jpg" alt="Dr. Md Sumon Hossain" class="profile-photo" onerror="this.style.display='none'">
+            <div class="profile-main">
+                <h1>Dr. Md Sumon Hossain</h1>
+                <div class="subtitle">
+                    Assistant Professor, Department of Mathematics<br>
+                    North South University
+                </div>
+            </div>
         </div>
-         <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research Interests</a>
-    <a href="publications.html">Publications</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
         <section>
             <p>
-                I am Dr. Md Sumon Hossain, an Assistant Professor specializing in Mathematics. With a profound passion for both teaching and research, I bring a wealth of knowledge and expertise to our academic community.
+                Welcome! I am Dr. Md Sumon Hossain, an Assistant Professor specializing in Mathematics. With a profound passion for both teaching and research, I bring a wealth of knowledge and expertise to our academic community.
             </p>
         </section>
         <section>
@@ -94,7 +167,7 @@
             </p>
         </section>
         <section>
-            <h2>Research & Contributions</h2>
+            <h2>Research &amp; Contributions</h2>
             <p>
                 Beyond the classroom, I am actively involved in collaborative research projects, publications, and academic conferences, contributing to the advancement of mathematical knowledge on both local and global scales.
             </p>
