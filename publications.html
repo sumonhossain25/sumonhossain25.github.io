@@ -1,66 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Publications | Dr. Sumon Hossain</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Dr. Md Sumon Hossain</title>
+    <style>
+        :root {
+            --main: #17537d;
+            --accent: #f3b13a;
+            --bg: #f7fafc;
+            --white: #fff;
+            --soft: #e8eef3;
+            --text: #212b36;
+            --shadow: 0 4px 32px rgba(23, 83, 125, 0.12);
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            color: var(--text);
+        }
+        .nav-bar {
+            margin: 0 auto 22px auto;
+            max-width: 780px;
+            text-align: center;
+        }
+        .nav-bar nav {
+            display: inline-block;
+            background: var(--white);
+            border-radius: 24px;
+            box-shadow: 0 2px 8px rgba(23,83,125,0.07);
+            overflow: hidden;
+        }
+        .nav-bar a {
+            color: var(--main);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.04rem;
+            padding: 10px 22px;
+            display: inline-block;
+            transition: background 0.15s, color 0.15s;
+        }
+        .nav-bar a.active, .nav-bar a:hover {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .section-container {
+            background: var(--white);
+            max-width: 780px;
+            margin: 0 auto 38px auto;
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            padding: 44px 38px 40px 38px;
+            position: relative;
+            z-index: 2;
+        }
+        h1, h2 {
+            color: var(--main);
+            margin-top: 0;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.1rem;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            margin-top: 32px;
+        }
+        ol, ul {
+            font-size: 1.07rem;
+            margin-left: 20px;
+            margin-bottom: 0;
+        }
+        ol {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+        .note {
+            color: #6a6a6a;
+            font-size: 0.98rem;
+            margin-bottom: 16px;
+            margin-top: -8px;
+        }
+        @media (max-width: 600px) {
+            .section-container { padding: 28px 5vw 20px 5vw; }
+            h1 { font-size: 1.4rem; }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Dr. Md Sumon Hossain</h1>
-        <div class="subtitle">
-            Assistant Professor, Department of Mathematics<br>
-            North South University
-        </div>
-        <section>
-            <p>
-                I am Dr. Md Sumon Hossain, an Assistant Professor specializing in Mathematics. With a profound passion for both teaching and research, I bring a wealth of knowledge and expertise to our academic community.
-            </p>
-        </section>
-        <section>
-            <h2>Academic Background</h2>
-            <p>
-                I hold a PhD in Mathematics from Rijksuniversiteit Groningen, where I delved into advanced topics such as Hybrid Systems, Optimization, and Machine Learning. My research interests span across various fields including Switched Systems and Machine Learning, where I am dedicated to exploring innovative solutions to contemporary mathematical problems.
-            </p>
-        </section>
-        <section>
-            <h2>Teaching Philosophy</h2>
-            <p>
-                As an educator, my mission is to inspire and empower the next generation of mathematicians. I believe in fostering a dynamic learning environment where students are encouraged to think critically, problem-solve creatively, and embrace the beauty of mathematical concepts.
-            </p>
-            <ul>
-                <li>Engaging lectures</li>
-                <li>Interactive discussions</li>
-                <li>Hands-on activities</li>
-            </ul>
-            <p>
-                Through these methods, I strive to instill in my students a deep appreciation for the elegance and significance of mathematics in our world.
-            </p>
-        </section>
-        <section>
-            <h2>Research & Contributions</h2>
-            <p>
-                Beyond the classroom, I am actively involved in collaborative research projects, publications, and academic conferences, contributing to the advancement of mathematical knowledge on both local and global scales.
-            </p>
-        </section>
-        <section>
-            <h2>Welcome to North South University</h2>
-            <p>
-                I am thrilled to be a part of the North South University community, where excellence in education and research is celebrated. I look forward to embarking on this journey together, as we explore the boundless possibilities of mathematics and its profound impact on society.
-            </p>
-        </section>
-        <div class="contact">
-            <p>
-                Feel free to reach out to me with any questions, ideas, or opportunities for collaboration. Let's embark on this mathematical adventure together!
-            </p>
-        </div>
-        <div class="signature">
-            Warm regards,<br>
-            Dr. Md Sumon Hossain<br>
-            Assistant Professor<br>
-            North South University
-        </div>
+    <div class="nav-bar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="research.html">Research Interests</a>
+            <a href="publications.html" class="active">Publications</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="section-container">
+        <h1>Publications</h1>
+
+        <h2>Submitted Papers</h2>
+        <ol reversed>
+            <li>Md Sumon Hossain, et al. Efficient machine learning methods for predicting epileptic seizures. <span class="note">(under review)</span></li>
+            <li>Md Sumon Hossain, et al. Physics-informed neural network to predict nonlinear systems. <span class="note">(under review)</span></li>
+            <li>Md Sumon Hossain, et al. Model reduction method of quadratic bilinear system. <span class="note">(under review)</span></li>
+            <li>Md Sumon Hossain, et al. Model reduction method of descriptor bilinear systems. <span class="note">(under review)</span></li>
+            <li>Md Sumon Hossain, et al. Advanced Model Order Reduction for High-Dimensional Aerospace Control Systems. <span class="note">(under review)</span></li>
+            <li>Md Sumon Hossain, et al. Optimal model order reduction technique for the dynamic motor vehicle suspension system. <span class="note">(under review)</span></li>
+            <li>Md Sumon Hossain, et al. Computation of Frequency-Limited Reduced-Order Model for a Piezo Actuator-based Adaptive Spindle Support. <span class="note">(under review)</span></li>
+            <li>Md Sumon Hossain, et al. Efficient model reduction methods for photovoltaic panel in frequency restricted domain. <span class="note">(under review)</span></li>
+        </ol>
+
+        <h2>Journal Articles</h2>
+        <ol reversed>
+            <li>M. Saiduzzaman, M. S. Islam, Md Sumon Hossain, M M. Uddin, M. O. Gani. Balanced truncation model reduction for laser heating model in frequency restricted domain. vol, 9, 2024.</li>
+            <li>Md Sumon Hossain and Stephan Trenn. Model reduction for switched differential-algebraic equations with known switching signal. DAE panel, vol. 3, 2025.</li>
+            <li>Md Sumon Hossain and Stephan Trenn. Midpoint based balanced truncation for switched linear systems with known switching signal. IEEE Transactions on Automatic Control, vol. 69, no. 1, 2023.</li>
+            <li>Md Sumon Hossain and Stephan Trenn. Reduced realization for switched linear systems with known mode sequence. Automatica, vol. 154, no. 111065, 1- 9, 2023.</li>
+            <li>Md Sumon Hossain and Stephan Trenn. Minimality of linear switched systems with known switching signal. Applied Mathematics and Mechanics, pamm.202100067, 2021.</li>
+            <li>Md Sumon Hossain and M. Monir Uddin. Iterative methods for solving large sparse Lyapunov equations and application to model reduction of index-1 differential-algebraic-equations. Numerical Algebra, Control and Optimization, 9(2): 173-186, 2019.</li>
+            <li>Manik Mondal, M. Forhad Uddin, and Md Sumon Hossain. Estimation of inventory for deteriorating items with non-linear demand considering discount and without discount policy. Journal of Naval Architecture and Marine Engineering, 13(2): 151-164, 2016.</li>
+        </ol>
+
+        <h2>Conference Papers</h2>
+        <ol reversed>
+            <li>Md Sumon Hossain and Stephan Trenn. A weak Kalman decomposition approach for reduced realizations of switched linear systems. IFAC-PapersOnLine, 55(20): 157-162, 2022.</li>
+            <li>Md Sumon Hossain and Stephan Trenn. Minimal realization for linear switched systems with a single switch. European Control Conference (ECC), 1168-1173, 2021.</li>
+            <li>Md Sumon Hossain and Stephan Trenn. A time-varying Gramian based model reduction approach for Linear Switched Systems. IFAC-PapersOnLine, 53(2): 5629-5634, 2020.</li>
+            <li>Md Sumon Hossain, M. Forhad Uddin and Manik Mondal. The Effects of Coordination Mechanism on Vendor Buyer System of a Supply Chain. 10th International Conference on Marine Technology (MARTEC), 194, 529-536, 2017.</li>
+            <li>M. Monir Uddin, Md Sumon Hossain, M. Forhad Uddin. Rational Krylov Subspace Method (RKSM) for solving the lyapunov equations of index-1 descriptor systems and application to balancing based model reduction. 9th International Conference on Electrical and Computer Engineering (ICECE), 451-454, 2016. <span class="note">(Received Best Paper Award)</span></li>
+        </ol>
+
+        <h2>Thesis Book</h2>
+        <ol reversed>
+            <li>Mphil.:  Md. Sumon Hossain, "Efficient solution of Lyapunov equation for descriptor system and application to model order reduction."</li>
+            <li>PhD:  Md. Sumon Hossain, "Reduced realizations and model reduction for switched linear systems: a time-varying approach."</li>
+        </ol>
     </div>
 </body>
 </html>
